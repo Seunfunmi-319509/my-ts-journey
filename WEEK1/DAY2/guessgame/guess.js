@@ -10,7 +10,13 @@ function guessNumber (number) {
 
     while (guess < 7) {
 
-    let number = Number(window.prompt("Guess the secret number"))
+    const input = Number(window.prompt("Guess the secret number"))
+    if (input === null) {
+        alert("You quit!!!")
+        console.log("You quit!!!")
+    }
+    
+    let number = input
     keepGuess.push(number)
     guess += 1
 
