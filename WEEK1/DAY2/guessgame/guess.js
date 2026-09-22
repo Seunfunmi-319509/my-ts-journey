@@ -3,20 +3,21 @@ const secretNumber = Math.floor(Math.random() * 100) + 1
 
 const keepGuess = []
 
-function guessNumber (number) {
+function guessGame () {
     alert(`Welcome to my Guess-Game, Player 🤗` )
 
     let guess = 0;
 
     while (guess < 7) {
 
-    const input = Number(window.prompt("Guess the secret number"))
+    let input = window.prompt("Guess the secret number")
     if (input === null) {
         alert("You quit!!!")
-        console.log("You quit!!!")
+        // console.log("You quit!!!")
+        break;
     }
     
-    let number = input
+    let number = Number(input)
     keepGuess.push(number)
     guess += 1
 
@@ -54,4 +55,4 @@ function guessNumber (number) {
     console.log(`Your guesses: (${guess}), ${keepGuess}`)
 }
 
-guessNumber()
+guessGame()
