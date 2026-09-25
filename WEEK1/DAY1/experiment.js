@@ -39,6 +39,12 @@ const age = 24;
 console.log(`Name: ${userName}, age:${age}`);
 console.log(`Next year: ${age + 1}`);
 
+ask(
+    "Do you agree?",
+    () => alert("You agreed."),
+    () => alert("You canceled the execution")
+)
+
 
 
 

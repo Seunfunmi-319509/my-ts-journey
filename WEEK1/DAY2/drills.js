@@ -39,6 +39,15 @@ const age = 20;
 const status = age >= 18 ? "adult" : "minor"
 console.log(status)
 
+// this keyword
+person = {
+    name: "mykels",
+    greet(){
+
+    }
+}
+// To use a function in an object, don't use the keyword
+
 
 
 
